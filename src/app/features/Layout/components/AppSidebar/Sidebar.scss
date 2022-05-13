@@ -1,0 +1,88 @@
+.sidebar{
+    background-color: var(--gray-light);
+    height: 100%;
+    position: relative;
+    will-change: width;
+    transition: width .3s cubic-bezier(.2,0,0,1) 0s;
+    width: 15px;
+    &--open{
+          width: 240px;
+    }
+
+    &__content{
+      min-width:240px;
+      padding: 1rem;
+      box-sizing: border-box;
+      height: 100%;
+      left: 0px;
+      overflow-x: hidden;
+      position: absolute;
+      top: 0px;
+      width: 100%;
+    }
+}
+
+.information{
+  padding: 1.5rem 0.25rem;
+  display: flex;
+  color:var(--text-primary-color);
+  font-family: 'Open Sans';
+  &__logo{
+    width: 45px;
+    height: 45px;
+  }
+  &__data{
+    padding-left: 0.5rem;
+  }
+  &__name{
+    margin: 0;
+    padding: 0;
+    font-size: .9375rem;
+    font-weight: 600;
+  }
+  &__description{
+    margin: 0;
+    padding: 0;
+    font-size: .8125rem;
+    line-height: 1.4rem;
+  }
+
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+    li{
+      list-style: none;
+      a{
+        text-decoration: none;
+      }
+    }
+}
+
+.menu{
+    &__item{
+      border-radius: 0.125rem;
+      padding: 0.5rem 0.75rem; 
+
+      a{
+        font-size: .9375rem;
+        color: var(--text-secondary-color);
+      }
+
+      &--active{
+        background-color: #EBECF0;
+        a{
+          color: #0052CC;
+        }
+      }
+    
+    }
+}
+
+.divider{
+  margin-top: 1rem;
+  height: 2px;
+  background-color: #C1C7D0;
+  width: 100%;
+}
